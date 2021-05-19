@@ -7,4 +7,8 @@ import uz.pdp.appwahouse.entity.Measurement;
 public interface MeasurementCustom {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
 }

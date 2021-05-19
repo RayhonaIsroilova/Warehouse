@@ -7,4 +7,8 @@ import uz.pdp.appwahouse.entity.Currency;
 public interface CurrencyCustom {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
 }

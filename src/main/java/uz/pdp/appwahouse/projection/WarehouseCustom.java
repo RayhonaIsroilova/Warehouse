@@ -7,4 +7,8 @@ import uz.pdp.appwahouse.entity.Warehouse;
 public interface WarehouseCustom {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
 }

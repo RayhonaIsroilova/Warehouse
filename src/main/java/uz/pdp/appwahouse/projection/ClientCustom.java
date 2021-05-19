@@ -7,4 +7,10 @@ import uz.pdp.appwahouse.entity.Client;
 public interface ClientCustom {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
+
+    String getPhoneNumber();
 }

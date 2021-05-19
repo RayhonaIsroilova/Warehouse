@@ -6,4 +6,10 @@ import org.springframework.data.rest.core.config.Projection;
 public interface Category {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
+
+    Category getParentCategory();
 }

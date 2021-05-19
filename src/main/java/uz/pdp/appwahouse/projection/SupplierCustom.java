@@ -7,4 +7,12 @@ import uz.pdp.appwahouse.entity.Supplier;
 public interface SupplierCustom {
 
     Integer getId();
+
+    String getName();
+
+    boolean getActive();
+
+    String getPhoneNumber();
+
+
 }
