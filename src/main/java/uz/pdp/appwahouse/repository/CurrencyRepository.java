@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Currency;
 import uz.pdp.appwahouse.projection.CurrencyCustom;
 
-@RepositoryRestResource(path = "currency",collectionResourceRel = "Rayhon",excerptProjection = CurrencyCustom.class)
+//@RepositoryRestResource(path = "currency",collectionResourceRel = "Rayhon",excerptProjection = CurrencyCustom.class)
+@Repository
 public interface CurrencyRepository extends JpaRepository<Currency,Integer> {
-//    boolean existsByName(String name);
+    boolean existsByName(String name);
 }

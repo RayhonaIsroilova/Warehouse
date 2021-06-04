@@ -6,9 +6,10 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Measurement;
 import uz.pdp.appwahouse.projection.MeasurementCustom;
 
-@RepositoryRestResource(path = "measurement",collectionResourceRel = "Rayhon",excerptProjection = MeasurementCustom.class)
+//@RepositoryRestResource(path = "measurement",collectionResourceRel = "Rayhon",excerptProjection = MeasurementCustom.class)
+@Repository
 public interface MeasurementRepository extends JpaRepository<Measurement,Integer> {
 
-//    boolean existsByName(String name);
+    boolean existsByName(String name);
 
 }

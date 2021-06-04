@@ -6,8 +6,9 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Product;
 import uz.pdp.appwahouse.projection.ProductCustom;
 
-@RepositoryRestResource(path = "product",collectionResourceRel = "Rayhon",excerptProjection = ProductCustom.class)
+//@RepositoryRestResource(path = "product",collectionResourceRel = "Rayhon",excerptProjection = ProductCustom.class)
+@Repository
 public interface ProductRepository extends JpaRepository<Product,Integer> {
-//boolean existsByName(String name);
+boolean existsByName(String name);
 
 }

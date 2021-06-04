@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Warehouse;
 import uz.pdp.appwahouse.projection.WarehouseCustom;
 
-@RepositoryRestResource(path = "warehouse",collectionResourceRel = "Rayhon",excerptProjection = WarehouseCustom.class)
+//@RepositoryRestResource(path = "warehouse",collectionResourceRel = "Rayhon",excerptProjection = WarehouseCustom.class)
+@Repository
 public interface WarehouseRepository extends JpaRepository<Warehouse,Integer> {
-//    boolean existsByName(String name);
+    boolean existsByName(String name);
 }

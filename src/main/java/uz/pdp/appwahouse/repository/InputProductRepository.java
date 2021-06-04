@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.InputProduct;
 import uz.pdp.appwahouse.projection.InputProductCustom;
 
-@RepositoryRestResource(path = "inputProduct",collectionResourceRel = "Rayhon",excerptProjection = InputProductCustom.class)
+//@RepositoryRestResource(path = "inputProduct",collectionResourceRel = "Rayhon",excerptProjection = InputProductCustom.class)
+@Repository
 public interface InputProductRepository extends JpaRepository<InputProduct,Integer> {
 }

@@ -6,9 +6,10 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Category;
 import uz.pdp.appwahouse.entity.Measurement;
 
-@RepositoryRestResource(path = "category",collectionResourceRel = "Rayhon",excerptProjection = uz.pdp.appwahouse.projection.Category.class)
+//@RepositoryRestResource(path = "category",collectionResourceRel = "Rayhon",excerptProjection = uz.pdp.appwahouse.projection.Category.class)
+@Repository
 public interface CategoryRepository extends JpaRepository<Category,Integer> {
 
-//    boolean existsByName(String name);
+    boolean existsByName(String name);
 
 }

@@ -7,8 +7,9 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.Input;
 import uz.pdp.appwahouse.projection.InputCustom;
 
-@RepositoryRestResource(path = "input",collectionResourceRel = "Rayhon",excerptProjection = InputCustom.class)
+//@RepositoryRestResource(path = "input",collectionResourceRel = "Rayhon",excerptProjection = InputCustom.class)
+@Repository
 public interface InputRepository extends JpaRepository<Input,Integer> {
 
-//    boolean existsByCode(String code);
+    boolean existsByCode(String code);
 }

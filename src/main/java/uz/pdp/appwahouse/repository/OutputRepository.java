@@ -7,8 +7,9 @@ import uz.pdp.appwahouse.entity.Input;
 import uz.pdp.appwahouse.entity.Output;
 import uz.pdp.appwahouse.projection.OutputCustom;
 
-@RepositoryRestResource(path = "output",collectionResourceRel = "Rayhon",excerptProjection = OutputCustom.class)
+//@RepositoryRestResource(path = "output",collectionResourceRel = "Rayhon",excerptProjection = OutputCustom.class)
+@Repository
 public interface OutputRepository extends JpaRepository<Output,Integer> {
 
-//    boolean existsByCode(String code);
+    boolean existsByCode(String code);
 }

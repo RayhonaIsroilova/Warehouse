@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.appwahouse.entity.User;
 import uz.pdp.appwahouse.projection.UserCustom;
 
-@RepositoryRestResource(path = "users",collectionResourceRel = "Rayhon",excerptProjection = UserCustom.class)
+//@RepositoryRestResource(path = "users",collectionResourceRel = "Rayhon",excerptProjection = UserCustom.class)
+@Repository
 public interface UserRepository extends JpaRepository<User,Integer> {
 
 }
